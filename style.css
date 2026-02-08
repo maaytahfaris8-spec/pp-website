@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+}
+
+/* Green Header Banner */
+.top-bar {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+/* Black Headline Section */
+.headline-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  width: 100%;
+}
+
+.headline-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.headline-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Topics Grid Container */
+.topics {
+  display: flex;
+  width: 100%;
+  background-color: #000;
+  border-top: 2px solid #fff;
+}
+
+/* Topic Card */
+.topic-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #fff;
+  background-color: #000;
+}
+
+.topic-card:last-child {
+  border-right: none;
+}
+
+/* White Title Bar */
+.topic-title {
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #000;
+}
+
+.topic-title a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.topic-title a:hover {
+  text-decoration: underline;
+}
+
+/* Image Container */
+.topic-image {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.topic-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1rem;
+  width: 100%;
+  border-top: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topics {
+    flex-direction: column;
+  }
+  
+  .topic-card {
+    border-right: none;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .topic-card:last-child {
+    border-bottom: none;
+  }
+  
+  .headline-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .headline-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .top-bar {
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+}
